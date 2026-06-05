@@ -1,7 +1,7 @@
 # llvm
 
-[![Build Status](https://github.com/llir/llvm/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/llir/llvm/actions/workflows/go.yml)
-[![Coverage Status](https://coveralls.io/repos/github/llir/llvm/badge.svg?branch=master)](https://coveralls.io/github/llir/llvm?branch=master)
+[![Build Status](https://github.com/llir/llvm/actions/workflows/go.yml/badge.svg)](https://github.com/llir/llvm/actions/workflows/go.yml)
+[![Coverage Status](https://coveralls.io/repos/github/llir/llvm/badge.svg)](https://coveralls.io/github/llir/llvm)
 [![Go Report Card](https://goreportcard.com/badge/github.com/llir/llvm)](https://goreportcard.com/report/github.com/llir/llvm)
 [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/llir/llvm)
 
@@ -18,11 +18,27 @@ Library for interacting with [LLVM IR](http://llvm.org/docs/LangRef.html) in pur
 go get github.com/llir/llvm/...
 ```
 
+## Project status
+
+This repository is a community-maintained fork continuing `llir/llvm` work.
+
+There is no official upstream maintainer handover at this time.
+
+The upstream maintainer suggested fork-based continuation in [issue #240](https://github.com/llir/llvm/issues/240).
+
+Near-term focus:
+
+- update LLVM compatibility to the latest stable upstream LLVM release
+- keep CI and tooling healthy
+- publish a new tagged release once the LLVM upgrade stabilizes
+
+See [AGENTS.md](AGENTS.md), [CONTRIBUTING.md](CONTRIBUTING.md), and [MAINTAINERS.md](MAINTAINERS.md) for collaboration details.
+
 ## Versions
 
 Map between `llir/llvm` tagged releases and LLVM release versions.
 
-* [llir/llvm v0.3.7](https://github.com/llir/llvm/tree/v0.3.7): LLVM 15.0 (yet to be released)
+* Fork next release target: LLVM 15.0+ support refresh (unreleased)
 * [llir/llvm v0.3.6](https://github.com/llir/llvm/tree/v0.3.6): LLVM 14.0
 * [llir/llvm v0.3.5](https://github.com/llir/llvm/tree/v0.3.5): LLVM 13.0
 * [llir/llvm v0.3.4](https://github.com/llir/llvm/tree/v0.3.4): LLVM 12.0

@@ -2,14 +2,24 @@ on:
   push:
     paths:
     - '**.go'
+  pull_request:
+    paths:
+    - '**.go'
+  # allow you to run this workflow manually from tab
+  workflow_dispatch:
 
 jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
     steps:
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: stable
+      id: go
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: Run linters
       run: |
         go install golang.org/x/lint/golint@latest

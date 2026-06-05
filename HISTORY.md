@@ -1,5 +1,11 @@
 # Release history
 
+## Unreleased
+
+- Community fork continuation started (June 2026).
+- Modernized contributor/maintenance docs and CI baselines.
+- Next milestone: update LLVM compatibility to latest stable upstream release.
+
 ## Version 0.3.4 (2021-07-26)
 
 Update `llir/llvm` to include new language concepts of LLVM 12.0 (thanks [@dannypsnl](https://github.com/dannypsnl)).
